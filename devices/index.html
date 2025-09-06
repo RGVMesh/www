@@ -115,7 +115,7 @@
 
             <section id="options">
                 <h2>Recommended Options</h2>
-                <p>I recently created a new tool, <a href="https://www.rfindex.com">RF Index</a>, which compares the various node options. This includes DIY, "Off the shelf", solar, etc. Let me know if you <a href="https://forms.gle/CNUbVP5eUTqZNsdX6" target="_blank" rel="nofollow">have any feedback</a>!
+                <p>Austin Mesh created a tool, <a href="https://www.rfindex.com">RF Index</a>, which compares the various node options. This includes DIY, "Off the shelf", solar, etc. They are collecting feedback, if you have any <a href="https://forms.gle/CNUbVP5eUTqZNsdX6" target="_blank" rel="nofollow">On this google form</a>!
             </section>
 
 
@@ -123,26 +123,26 @@
                 <h2 id="solar">Building a Solar-Powered Repeater for Meshtastic</h2>
                 <h3 id="history">A brief history</h3>
                 <h4>History of versions</h4>
-                <p>We have tried 5 permutations of solar powering nodes:</p>
+                <p>Austin Mesh has tried 5 permutations of solar powering nodes:</p>
                 <details>
                     <summary>Version 1.0 RAKBox-B2 2000mah LiPo</summary>
-                    <p>Using RAK RAKBox-B2 Enclosure with solar panel. The panel was connected directly to the RAK Wireless WisBlock Meshtastic Starter Kit US915. We connected a 2000 MAh Lithium Polymer battery directly to the RAK board. We drilled a hole in the top of the box and attached a fiberglass antenna, which was connected to the RAK board with an iPEX to N-Type connector. We mounted this on top of one of the UT buildings and it died within a month. The 0.4 watt panel is way too small.</p>
+                    <p>Using RAK RAKBox-B2 Enclosure with solar panel. The panel was connected directly to the RAK Wireless WisBlock Meshtastic Starter Kit US915. they connected a 2000 MAh Lithium Polymer battery directly to the RAK board. they drilled a hole in the top of the box and attached a fiberglass antenna, which was connected to the RAK board with an iPEX to N-Type connector. they mounted this on top of one of the UT buildings and it died within a month. The 0.4 watt panel is way too small.</p>
                 </details>
                 <details>
                     <summary>Version 2.0 USB Solar</summary>
-                    <p>Same as 1.0 but we added a second 5 watt solar panel that was connected to the RAK board via USB. Also died within a month.</p>
+                    <p>Same as 1.0 but they added a second 5 watt solar panel that was connected to the RAK board via USB. Also died within a month.</p>
                 </details>
                 <details>
                     <summary>Version 3.0 Internal Solar, Power Module, 18650's</summary>
-                    <p>To minimize the amount of components outside the box we used a much larger box with a clear lid and placed the solar panel inside the box. We added a Texas Instruments Green Power Module between the solar panel and the RAK board to help regulate the power. For batteries we switched to using four 18650 batteries and we also added an overdischarge protection circuit from Voltaic Enclosures (not to be confused with Voltaic Systems) between the battery and the RAK board to provide clean shutoff when battery voltage fell below 2.5v. We mounted this on top of the UT buildings and it died in 3 months.</p>
+                    <p>To minimize the amount of components outside the box they used a much larger box with a clear lid and placed the solar panel inside the box. they added a Texas Instruments Green Power Module between the solar panel and the RAK board to help regulate the power. For batteries they switched to using four 18650 batteries and they also added an overdischarge protection circuit from Voltaic Enclosures (not to be confused with Voltaic Systems) between the battery and the RAK board to provide clean shutoff when battery voltage fell below 2.5v. they mounted this on top of the UT buildings and it died in 3 months.</p>
                 </details>
                 <details>
                     <summary>Version 4.0 External Solar</summary>
-                    <p>Same as Version 3.0 but we mounted the solar panel outside of the box (using a smaller box). We mounted this on a pole and it died within 3 months.</p>
+                    <p>Same as Version 3.0 but they mounted the solar panel outside of the box (using a smaller box). they mounted this on a pole and it died within 3 months.</p>
                 </details>
                 <details open>
                     <summary>Version 5.0 (Currently running)</summary>
-                    <p>For this version we stopped using the RAK’s solar and battery connectors entirely. Instead we connected a large 12 watt solar panel to a Voltaic Systems battery via USB and then connected the battery to the RAK board via USB. The Voltaic Systems battery acts as the solar charge controller and also acts as the overdischarge protection circuit; the battery will charge at a range of voltages from the solar panel (if it gets shaded) and the battery will shut off if the voltages drops too low and will reboot itself once it has recharged sufficiently.</p>
+                    <p>For this version they stopped using the RAK’s solar and battery connectors entirely. Instead they connected a large 12 watt solar panel to a Voltaic Systems battery via USB and then connected the battery to the RAK board via USB. The Voltaic Systems battery acts as the solar charge controller and also acts as the overdischarge protection circuit; the battery will charge at a range of voltages from the solar panel (if it gets shaded) and the battery will shut off if the voltages drops too low and will reboot itself once it has recharged sufficiently.</p>
                 </details>
 
                 <h4>Lessons learned:</h4>
@@ -155,16 +155,16 @@
                     <li>Don’t add any modules. The GPS module increases battery usage significantly and is unnecessary if the repeater is in a fixed position.</li>
                     <li>Seal everything properly and make sure water has a way to get out of the case. Use o-rings for the antenna mount and wrap connectors in proxicast. Add a drain plug to the case so any condensation has a way to escape. For high humidity environments, spray the electronics with conformal coating.</li>
                 </ol>
-                <p>These are lessons learned from Austin Texas, where the main environmental stressors are heat and thunderstorms. In the summer of 2023 we 80 days over 100° F (38°C) and we had a stretch of 11 days over 105° F (40.5°C), during which two radios died. We also can have both high humidity and high temperature at the same time in Austin; in the summer the weather would swing from 80° F (27°C) with 85% humidity in the morning to 105° F (38°C) with 25% humidity in the afternoon. <a href="https://weatherspark.com/h/y/8004/2023/Historical-Weather-during-2023-in-Austin-Texas-United-States">Weather history here.</a> Our learnings are probably applicable to other southern and desert climates.</p>
+                <p>These are lessons learned from Austin Texas, where the main environmental stressors are heat and thunderstorms. In the summer of 2023 they 80 days over 100° F (38°C) and they had a stretch of 11 days over 105° F (40.5°C), during which two radios died. they also can have both high humidity and high temperature at the same time in Austin; in the summer the weather would swing from 80° F (27°C) with 85% humidity in the morning to 105° F (38°C) with 25% humidity in the afternoon. <a href="https://weatherspark.com/h/y/8004/2023/Historical-Weather-during-2023-in-Austin-Texas-United-States">Weather history here.</a> Our learnings are probably applicable to other southern and desert climates.</p>
                 <details>
                     <summary>Details on the boards that died</summary>
-                    <p>One was filled with water, the antenna seal didn't work. That's why the vent valve at the bottom is so important. One died because it got stuck in the low voltage state that requires a physical reset - that's fixed with the Voltaic packs. The third one died due to unknown causes but heat is suspected. When we tried to reboot with with wall power it wouldn't turn on - so the board was totally fried. That one I also sprayed with covalent coating nasty stuff that we won't use any more.</p>
+                    <p>One was filled with water, the antenna seal didn't work. That's why the vent valve at the bottom is so important. One died because it got stuck in the low voltage state that requires a physical reset - that's fixed with the Voltaic packs. The third one died due to unknown causes but heat is suspected. When they tried to reboot with with wall power it wouldn't turn on - so the board was totally fried. That one I also sprayed with covalent coating nasty stuff that they won't use any more.</p>
                 </details>
                 <h4>Considerations for other climates</h4>
                 <ol>
                     <li>Northern Climates and extreme cold
                         <ul>
-                            <li>This isn't from our experience, but we felt it was so valuable that we shoud link to it here. <a href="https://www.yycmesh.com/" target="_blank">YYC Mesh</a>, a group in southern Alberta as well as the Greater Vancouver/Victoria recently published their <a href="https://yycmesh.wordpress.com/2025/04/19/cold-weather-charging-of-lithium-ion-batteries-real-world-lessons-from-the-meshtastic-community/?utm_source=referral&utm_medium=website&utm_campaign=rgvmesh.org" target="_blank">findings on batteries in cold temperatures</a>.
+                            <li>This isn't from our experience, but they felt it was so valuable that they shoud link to it here. <a href="https://www.yycmesh.com/" target="_blank">YYC Mesh</a>, a group in southern Alberta as well as the Greater Vancouver/Victoria recently published their <a href="https://yycmesh.wordpress.com/2025/04/19/cold-weather-charging-of-lithium-ion-batteries-real-world-lessons-from-the-meshtastic-community/?utm_source=referral&utm_medium=website&utm_campaign=rgvmesh.org" target="_blank">findings on batteries in cold temperatures</a>.
                             <li>LiPo and Li-ion are fine(0 failures)</li>
                             <li>Capacity <b>IS</b> reduced. 3000mAh minimum kept nodes up and charge rates low(good thing)</li>
                             <li>Charging creates heat, enclosures trap heat</li>
@@ -259,7 +259,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4"><small>Some of these links are affiliate links. Any commission we earn helps support rgvmesh.org’s community network at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
+                                <td colspan="4"><small>Some of these links are affiliate links. Any commission they (Austin Mesh) earns helps support their wider mission at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
                             </tr>
                         </tfoot>
                     </table>
@@ -374,7 +374,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4"><small>Some of these links are affiliate links. Any commission we earn helps support rgvmesh.org’s community network at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
+                                <td colspan="4"><small>Some of these links are affiliate links. Any commission they earn helps support rgvmesh.org’s community network at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
                             </tr>
                         </tfoot>
                     </table>
@@ -419,7 +419,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4"><small>Some of these links are affiliate links. Any commission we earn helps support rgvmesh.org’s community network at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
+                                <td colspan="4"><small>Some of these links are affiliate links. Any commission they earn helps support rgvmesh.org’s community network at no extra cost to you. <a href="/privacy">Privacy policy</a></small></td>
                             </tr>
                         </tfoot>
                     </table>
@@ -428,10 +428,10 @@
 
             <section>
                 <h2>Aerial Nodes</h2>
-                <p>As you may already know, the mesh technology we use relies on the LoRa technology in the 900mhz frequency range. This means that connection is dependent on Line of Site(LoS) between the antennas. <b>The easiest way to ensure LoS is with height</b>. The easiest (though temporary) way to get height is through an aerial platform including but not limited to UAVs(drones or planes) or kites!</p>
+                <p>As you may already know, the mesh technology they use relies on the LoRa technology in the 900mhz frequency range. This means that connection is dependent on Line of Site(LoS) between the antennas. <b>The easiest way to ensure LoS is with height</b>. The easiest (though temporary) way to get height is through an aerial platform including but not limited to UAVs(drones or planes) or kites!</p>
 
                 <h3>Drone Nodes</h3>
-                <p>In our <a href="/similar-networks/#start-a-similar-network">starting a similar network</a> section we discussed the intentional usage of drones to help grow your network. This section will cover some key tips around hardware, strategy, and safety.</p>
+                <p>In our <a href="/similar-networks/#start-a-similar-network">starting a similar network</a> section they discussed the intentional usage of drones to help grow your network. This section will cover some key tips around hardware, strategy, and safety.</p>
                 <ul>
                     <li><b>Schedule:</b> Most drones will only fly for 15-30m per battery. Schedule communication windows specifically so that batteries are not wasted. Consider prescheduling times with your group to either have multiple drones up at once, or extend windows by alternating who is in the air.</li>
                     <li><b>Weight:</b> Due to the short flight times, your node can use a very small battery. Think 100mah. Strip all non necessary items.</li>
